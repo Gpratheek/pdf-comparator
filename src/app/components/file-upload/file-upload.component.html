@@ -1,0 +1,34 @@
+<!-- <div class="file-upload-container">
+  <h2>Document Comparison</h2>
+
+  <div class="file-upload">
+    <label for="doc1">Upload Sample Document:</label>
+    <input type="file" id="doc1" (change)="onFileChange($event, 1)">
+  </div>
+
+  <div class="file-upload">
+    <label for="doc2">Upload Document to Compare:</label>
+    <input type="file" id="doc2" (change)="onFileChange($event, 2)">
+  </div>
+
+
+  <button (click)="compareDocuments()" [disabled]="!doc1 || !doc2">Compare Documents</button>
+</div> -->
+<!-- file-upload.component.html -->
+<div class="file-upload-container">
+  <h2>Document Comparison</h2>
+
+  <!-- File Uploads -->
+  <div class="file-upload">
+    <label for="doc1">Upload Sample Document:</label>
+    <input type="file" id="doc1" (change)="onFileChange($event, 1)">
+  </div>
+
+  <div class="file-upload">
+    <label for="doc2">Upload Document to Compare:</label>
+    <input type="file" id="doc2" (change)="onFileChange($event, 2)">
+  </div>
+
+  <!-- Compare Button -->
+  <button (click)="compareDocuments()" [disabled]="!doc1 || !doc2">Compare Documents</button>
+</div>

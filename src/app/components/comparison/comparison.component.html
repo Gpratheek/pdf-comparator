@@ -1,0 +1,33 @@
+<!-- <div class="comparison-result">
+  <h2>Comparison Result</h2>
+
+  <div *ngIf="result">
+    <h3>Differences</h3>
+    <ul>
+      <li *ngFor="let diff of result.differences">{{ diff }}</li>
+    </ul>
+  </div>
+
+  <div *ngIf="!result">
+    <p>No differences found or documents not uploaded.</p>
+  </div>
+</div> -->
+<!-- comparison.component.html -->
+<div class="comparison-result">
+  <h2>Comparison Result</h2>
+
+  <div *ngIf="result">
+    <h3>Differences</h3>
+    <ul>
+      <li *ngFor="let diff of result.differences">
+        <strong>Line {{ diff.line }}:</strong> 
+        <br> <strong>Old Text:</strong> {{ diff.oldText }} 
+        <br> <strong>New Text:</strong> {{ diff.newText }}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="!result">
+    <p>No differences found or documents not uploaded.</p>
+  </div>
+</div>
